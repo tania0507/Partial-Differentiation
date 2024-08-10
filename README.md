@@ -243,6 +243,97 @@ whether or not x , y and z are independent of each other. Several types of depen
 
 **Total derivative** Let u = f(x,y) and x and y are themselves functions of a single independent variable *t*. Then the dependent variable *f* may be considered as truly a function of the one independent variables x,y. Now the derivative of *f* w.r.t.  '*t*' is known as the total derivative of *f* and is given by
 
+$\frac{df}{dt}$ = $\frac{\partial f}{\partial x} \frac{dx}{dt}$ + $\frac{\partial f}{\partial y} \frac{dy}{dt} \qquad$ (2)
+
+Generalizing this, if u = f(x, y, z) and
+x = x(t), y = y(t), z = z(t) then the total derivative
+of f is
+
+$\frac{df}{dt}$ = $\frac{\partial f}{\partial x} \frac{dx}{dt}$ + $\frac{\partial f}{\partial y} \frac{dy}{dt}$ + $\frac{\partial f}{\partial z} \frac{dz}{dt} \qquad$ (3)
+
+This can easily be extended to function of several
+variables.
+If u = f(x, y, z) and suppose y and z are function
+of x, then f is a function of the one independent
+variable x. Here y and z are intermediate variables.
+Identifying t with x in (3), we obtain
+
+$\frac{df}{dx}$ = $\frac{\partial f}{\partial x} \frac{dx}{dx}$ + $\frac{\partial f}{\partial y} \frac{dy}{dx}$ + $\frac{\partial f}{\partial z} \frac{dz}{dx}$
+
+$\frac{df}{dx}$ = $\frac{\partial f}{\partial x}$ + $\frac{\partial f}{\partial y} \frac{dy}{dx}$ + $\frac{\partial f}{\partial z} \frac{dz}{dx} \qquad$ (4)
+
+### WORKED OUT EXAMPLES
+
+**Example 1:** Find $\frac{du}{dt}$ as a total derivative and verify
+the result by direct substitution if u = $x^2 + y^2 + z^2$
+and x = $e^{2t}$, y = $e^{2t}$ cos 3t, z = $e^{2t}$ sin 3t.
+
+**Solution:** Here u is a function of x, y, z and x, y, z
+are in turn functions of t. Thus u is a function 't' via
+the intermediate variables x, y, z. Then
+
+$\frac{du}{dt}$ = $\frac{\partial u}{\partial x} \frac{dx}{dt}$ + $\frac{\partial u}{\partial y} \frac{dy}{dt}$ + $\frac{\partial u}{\partial z} \frac{dz}{dt}$
+
+= 2x $\cdot 2e^{2t}$ + 2y $\cdot (2e^{2t} \cos 3t$ - $3e^{2t} \sin 3t)$ +
+
+ 2z $\cdot (2e^{2t} \sin 3t$ - $3e^{2t} \cos 3t)$
+
+ Rewriting in terms of x, y, z
+ 
+= 2x · 2 · x + 2 · y(2y - 3 · z) + 2z(2z + 3y)
+= 4(x² + y² + z²)
+or in terms of t
+
+$\frac{du}{dt}$ = $4(e^{4t} + e^{4t}(\cos² 3t + \sin² 3t))$ = 8 $e^{4t}$
+
+verification by direct substitution:
+
+u = x² + y² + z² = $e^{4t}$ + $e^{4t} \cos² 3t$ + $e^{4t} \sin² 3t$ = 2 $e^{4t}$
+
+$\frac{du}{dt}$ = 8 $e^{4t}$.
+
+**Example 2:** Find the total differential coefficient
+of x²y w.r.t. x when x, y are connected by
+x² + xy + y² = 1.
+
+**Solution:** Let u = x²y, then the total differential is
+
+du = $\frac{\partial u}{\partial x}dx$ + $\frac{\partial u}{\partial y}dy$
+
+Thus the total differential coefficient of u w.r.t. x is
+
+$\frac{du}{dx}$ = $\frac{\partial u}{\partial x}$ + $\frac{\partial u}{\partial y}\frac{dy}{dx}$
+
+$\frac{du}{dx}$ = 2xy + x² $\frac{dy}{dx}$
+
+From the implicit relation f = x² + xy + y = 1, we
+calculate
+
+$\frac{dy}{dx}$ = - $\frac{f_x}{f_y}$ = - $\frac{2x + y}{x + 2y}$
+
+so
+
+$\frac{du}{dx}$ = 2xy + x² · $\frac{dy}{dx}$ = 2xy + x² · $\left(-\frac{(2x + y)}{(x + 2y)}\right)$
+
+$\frac{du}{dx}$ = 2xy - $\frac{x²(2x + y)}{(x + 2y)}$
+
+**Example 3:** The altitude of a right circular cone
+is 15 cm and is increasing at 0.2 cm/sec. The radius
+of the base is 10 cm and is decreasing at 0.3 cm/sec.
+How fast is the volume changing?
+
+**Solution:** Let x be the radius and y be the altitude
+of the cone. So volume V of the right circular cone is
+
+V = $\frac{1}{3}\pi x²y$.
+
+Since x and y are changing w.r.t. time t, differentiate
+V w.r.t. t.
+
+$\frac{dV}{dt}$ = $\frac{\partial V}{\partial x}\frac{dx}{dt}$ + $\frac{\partial V}{\partial y}\frac{dy}{dt}$
+
+
+
 
 
 
