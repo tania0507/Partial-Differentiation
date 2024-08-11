@@ -349,7 +349,7 @@ i.e., volume is decreasing at the rate of 70π/3.
    
 Ans. t-2/ $t^3$ $e^t$ cos $(e^t/t^2)$
 
-2. Find du/dt given u = $sin^-1(x - y)$ ; x = 3t,
+2. Find du/dt given u = $sin^{-1}$ (x - y) ; x = 3t,
    y = 4 $t^3$ . Verify the result by direct substitution.
    
 Ans. 3 $(1 - t^2)^-1/2$
@@ -364,67 +364,72 @@ Ans. 6 $t^5$ ; 192
 
 Ans. -2 / $e^2t$ + $e^-2t$
 
-6. If x, y are related by x^2 - y^2 = 2 and
-   y = tan(x^2 + y^2) find dy/dx.
-Ans. 4x sec^2(x^2 - 2)
+5. If x, y are related by x^2 - y^2 = 2 and
+   y = tan $(x^2 + y^2)$ find dy/dx.
+   
+Ans. 4x $sec^2$ ( $2x^2$ - 2)
 
-7. If y = tan^-1(x/y) and y = x^4 find dy/dx at x = 1
-Ans. 3/5 ; 1/3 at x = 1
+6. If y = $tan^{-1}$ (x/y) and y = $x^4$ find dy/dx at x = 1
+   
+Ans. 3 $x^2$ / 1 + $x^6$ ; 3/2 at x = 1
 
-8. In order that the function y = 2xy - 3x^2y
+7. In order that the function u = 2xy - 3 $x^2$ y
    remains constant, what should be the rate of
    change of y (w.r.t. t) given that x increases
    at the rate of 2 cm/sec at the instant when
    x = 3 cm and y = 1 cm.
-Ans. dy/dt = 11 cm/sec; y must decrease at the rate
-   of 11 cm/sec
+   
+Ans. dy/dt = -32/21 cm/sec; y must decrease at the rate
+   of 32/21 cm/sec
 
-9. Find the rate at which the area of a rectangle
+8. Find the rate at which the area of a rectangle
    is increasing at a given instant when the sides of the rectangle are 4 ft and 3 ft and
 are increasing at the rate of 1.5 ft/sec and
 0.5 ft/sec respectively.
+   
 Ans. 6.5 sq. ft/sec
 
-10. Find a. dz/dx and b. dz/dy given z = xy^2 +
-   x^2y, y = ln x
-Ans. a. Here x is the independent variable
-    dz/dx = ∂z/∂x + ∂z/∂y · dy/dx = y^2 + 2xy + 2y + x
-    b. Here y is the independent variable
-    dz/dy = ∂z/∂y + ∂z/∂x · dx/dy = xy^2 + 2x^2y + 2xy + x^2
+9. Find
+   
+   **a.** dz/dx and
+
+   **b.** dz/dy given z = x $y^2$ + $x^2$ y, y = ln x
+   
+Ans. **a.** Here x is the independent variable
+
+ dz/dx = ∂z/∂x + ∂z/∂y · dy/dx = $y^2$ + 2xy + 2y + x
+    
+   **b.** Here y is the independent variable
+   
+dz/dy = ∂z/∂y + ∂z/∂x · dx/dy = x $y^2$ + 2 $x^2$ y + 2xy + $x^2$
 
 Find the differential of the following functions:
+
 10. f(x, y) = x cos y - y cos x
+    
 Ans. df = (cos y + y sin x)dx - (x sin y +
     cos x)dy
 
-11. u(x, y, z) = e^xyz
-Ans. du = e^xyz(yz dx + xz dy + xy dz)
+11. u(x, y, z) = $e^{xyz}$
+    
+Ans. du = $e^{xyz}$ (yz dx + xz dy + xy dz)
 
 Find du/dt for the following functions:
-12. u = x^2 - y^2, x = e^t cos t, y = e^t sin t
+
+12. u = $x^2$ - $y^2$, x = $e^t$ cos t, y = $e^t$ sin t
     at t = 0.
-Ans. du/dt = 2(cos 2t - sin 2t); At t = 0, du/dt = 2
+    
+Ans. 2 $e^2t$ (cos 2t - sin 2t); At t = 0, du/dt = 2
 
-13. u = ln(x + y + z); x = e^-t, y = sin t, z =
+13. u = ln(x + y + z); x = $e^{-t}$ , y = sin t, z =
     cos t
-Ans. du/dt = (-e^-t + cos t - sin t)/(e^-t + sin t + cos t)
+    
+Ans. ( cos t - sin t - $e^{-t}$ )/(sin t + cos t + $e^{-t}$ )
 
-14. u = sin(e^t + y), x = f(t), y = g(t)
-Ans. du/dt = [cos(e^t+y)]e^t + [cos(e^t+y)]g'(t)
+14. u = sin( $e^x$ + y), x = f(t), y = g(t)
+    
+Ans. du/dt = [cos ( $e^x$ +y)] $e^x$ f'(t) + [cos( $e^x$ +y)]g'(t)
 
-15. u = y · x^y-1 · cos t + x^y ln x
-Ans. y · x^y-1 cos t + x^y ln x · t+1/t^2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+15. u = $x^y$ when y = $tan^{-1}$ t , x = sin t
+    
+Ans. y · $x^{y-1}$  cos t + $x^y$ ln x · 1/1 = $t^2$ .
